@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Itscraper",
+  "version": "1.0",
+
+  "description": "Scrape your planner on itslearning",
+
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.itslearning.com/main.aspx?TextURL=Calendar%2fSchedule.aspx"],
+      "js": ["main.js"]
+    }
+  ]
+
+}
